@@ -16,13 +16,19 @@
       "id": "393e",
       "name": "Armaan Kaur",
       "password": "abc@123",
-      "email": "armaan@gmail.com"
+      "email": "armaan@seller.com"
     },
     {
       "id": "4f4b",
       "name": "baban",
       "password": "abc@321",
-      "email": "baban@gmail.com"
+      "email": "baban@seller.com"
+    },
+    {
+      "id": "f148",
+      "name": "davinder",
+      "password": "abc@123",
+      "email": "davinder@seller.com"
     }
   ]
 }
