@@ -1,0 +1,28 @@
+{
+  "seller": [
+    {
+      "id": "fb36",
+      "name": "Sumedh Randhawa",
+      "email": "sumedh@seller.com",
+      "password": "abc@123"
+    },
+    {
+      "id": "b584",
+      "name": "Harsanjam Randhawa",
+      "email": "harsanjam@seller.com",
+      "password": "abc@123"
+    },
+    {
+      "id": "393e",
+      "name": "Armaan Kaur",
+      "password": "abc@123",
+      "email": "armaan@gmail.com"
+    },
+    {
+      "id": "4f4b",
+      "name": "baban",
+      "password": "abc@321",
+      "email": "baban@gmail.com"
+    }
+  ]
+}
