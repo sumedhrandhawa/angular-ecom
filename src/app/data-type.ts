@@ -8,6 +8,7 @@ export interface Login {
   email: string;
 }
 export interface Product {
+  id: string;
   name: string;
   price: number;
   color: string;
