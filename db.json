@@ -36,5 +36,43 @@
       "email": "ruby@seller.com",
       "password": "abc@321"
     }
+  ],
+  "products": [
+    {
+      "id": "1e11",
+      "name": "iPhone 14",
+      "price": "100000",
+      "category": "mobiles",
+      "color": "black",
+      "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.dxomark.com%2Fapple-iphone-14-camera-test%2F&psig=AOvVaw2hWmTmw4m5vjWfRWIGSjs0&ust=1728037975009000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCMDM7J6B8ogDFQAAAAAdAAAAABAE",
+      "descripton": "iPhone"
+    },
+    {
+      "id": "9abc",
+      "name": "Samsung M40",
+      "price": "23000",
+      "color": "blue",
+      "category": "mobile",
+      "description": "a samsung product",
+      "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.gsmarena.com%2Fsamsung_galaxy_m40-9721.php&psig=AOvVaw0S8LiJOI2cjLmvGv2eox95&ust=1728039018956000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCMjfzJGF8ogDFQAAAAAdAAAAABAE"
+    },
+    {
+      "id": "51b8",
+      "name": "",
+      "price": "",
+      "color": "",
+      "category": "",
+      "description": "",
+      "image": ""
+    },
+    {
+      "id": "b2cd",
+      "name": "iPhone 14 Pro",
+      "price": "120000",
+      "color": "golden",
+      "category": "mobile",
+      "description": "iphone 14",
+      "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fiplanet.one%2Fproducts%2Fiphone-14-pro-mq183hn-a&psig=AOvVaw24yMqfhxLlIXI5nYpHc57e&ust=1728039412725000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKDK0syG8ogDFQAAAAAdAAAAABAQ"
+    }
   ]
 }

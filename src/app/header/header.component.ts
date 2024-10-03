@@ -18,13 +18,11 @@ export class HeaderComponent {
     this.route.events.subscribe((val: any) => {
       if (val.url) {
         if (localStorage.getItem('seller') && val.url.includes('seller')) {
-          console.warn('in seller area');
           this.menuType = 'seller';
           let sellerStore = localStorage.getItem('seller');
           let sellerData = sellerStore && JSON.parse(sellerStore);
           this.sellerName = sellerData.name;
         } else {
-          console.warn('outside seller');
           this.menuType = 'default';
         }
       }
