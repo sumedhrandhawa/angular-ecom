@@ -11,6 +11,7 @@ import { CommonModule } from '@angular/common';
 })
 export class HeaderComponent {
   menuType: string = 'default';
+  sellerName: string = '';
   constructor(private route: Router) {}
 
   ngOnInit(): void {
@@ -19,11 +20,18 @@ export class HeaderComponent {
         if (localStorage.getItem('seller') && val.url.includes('seller')) {
           console.warn('in seller area');
           this.menuType = 'seller';
+          let sellerStore = localStorage.getItem('seller');
+          let sellerData = sellerStore && JSON.parse(sellerStore);
+          this.sellerName = sellerData.name;
         } else {
           console.warn('outside seller');
           this.menuType = 'default';
         }
       }
     });
+  }
+  logout() {
+    localStorage.removeItem('seller');
+    this.route.navigate(['/']);
   }
 }

@@ -40,6 +40,27 @@
       "id": "586c",
       "email": "sumedh@seller.com",
       "password": "abc@123"
+    },
+    {
+      "id": "d1a8",
+      "email": "sumedh@seller.com",
+      "password": "abc@123"
+    },
+    {
+      "id": "7cba",
+      "email": "sumedh@seller.com",
+      "password": "abc@123"
+    },
+    {
+      "id": "2765",
+      "name": "sumedh",
+      "email": "sumedh@seller.com",
+      "password": "abc123"
+    },
+    {
+      "id": "98d7",
+      "email": "sumedh@seller.com",
+      "password": "abc@123"
     }
   ]
 }
