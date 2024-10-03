@@ -29,6 +29,17 @@
       "name": "davinder",
       "password": "abc@123",
       "email": "davinder@seller.com"
+    },
+    {
+      "id": "217b",
+      "name": "ruby",
+      "email": "ruby@seller.com",
+      "password": "abc@321"
+    },
+    {
+      "id": "586c",
+      "email": "sumedh@seller.com",
+      "password": "abc@123"
     }
   ]
 }

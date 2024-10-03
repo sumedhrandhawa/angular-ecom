@@ -13,11 +13,11 @@
     <!-- Login Area -->
     <div *ngIf="showLogin" class="sign-up">
         <h1>Seller Login</h1>
-        <form #sellerLogin="ngForm" (ngSubmit)="login(sellerLogin.value)" class="common-form">
+        <form #sellerLogin="ngForm" (ngSubmit)="signUp(sellerLogin.value)" class="common-form">
             <input class="form-input" type="email" ngModel name="email" placeholder="Enter email">
             <input class="form-input" type="password" ngModel name="password" placeholder="Enter password">
             <button class="form-button">Login</button>
-            <a class="auth-toggle-link" (click)="openLogin()">Don't have account? Click to Sign-Up</a>
+            <a class="auth-toggle-link" (click)="openSignUp()">Don't have account? Click to Sign-Up</a>
         </form>
     </div>
 </div>
