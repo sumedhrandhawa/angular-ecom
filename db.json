@@ -20,47 +20,21 @@
     },
     {
       "id": "4f4b",
-      "name": "baban",
+      "name": "Baban",
       "password": "abc@321",
       "email": "baban@seller.com"
     },
     {
       "id": "f148",
-      "name": "davinder",
+      "name": "Davinder Kaur",
       "password": "abc@123",
       "email": "davinder@seller.com"
     },
     {
       "id": "217b",
-      "name": "ruby",
+      "name": "Rupinder Kaur",
       "email": "ruby@seller.com",
       "password": "abc@321"
-    },
-    {
-      "id": "586c",
-      "email": "sumedh@seller.com",
-      "password": "abc@123"
-    },
-    {
-      "id": "d1a8",
-      "email": "sumedh@seller.com",
-      "password": "abc@123"
-    },
-    {
-      "id": "7cba",
-      "email": "sumedh@seller.com",
-      "password": "abc@123"
-    },
-    {
-      "id": "2765",
-      "name": "sumedh",
-      "email": "sumedh@seller.com",
-      "password": "abc123"
-    },
-    {
-      "id": "98d7",
-      "email": "sumedh@seller.com",
-      "password": "abc@123"
     }
   ]
 }
