@@ -48,13 +48,13 @@
       "image": "https://inventstore.in/wp-content/uploads/2023/04/Purple-scaled.webp"
     },
     {
-      "id": "9abc",
       "name": "Samsung M40",
-      "price": "23000",
+      "price": "18000",
       "color": "blue",
       "category": "mobile",
       "description": "a samsung product",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1eiaj3N4ky-1nggBrTzaRLUgq0EJG9KHTJw&s"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1eiaj3N4ky-1nggBrTzaRLUgq0EJG9KHTJw&s",
+      "id": "9abc"
     },
     {
       "id": "b2cd",

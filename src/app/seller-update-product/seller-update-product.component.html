@@ -1,7 +1,7 @@
 <div class="update-product">
     <h1>Update Product</h1>
-    <p class="message-p">{{""}}</p>
-    <form #addProduct="ngForm" (ngSubmit)="submit()" class="common-form">
+    <p class="message-p">{{this.productMessage}}</p>
+    <form #addProduct="ngForm" (ngSubmit)="submit(addProduct.value)" class="common-form">
         <input class="form-input" type="email" ngModel="{{productData?.name}}" name="name"
             placeholder="Enter Product Name">
         <input class="form-input" type="email" type="email" ngModel="{{productData?.price}}" name="price"
