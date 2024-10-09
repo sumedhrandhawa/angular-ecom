@@ -77,7 +77,7 @@
     {
       "name": "Toy Truck",
       "price": "2000",
-      "color": "Blue Red",
+      "color": "Blue",
       "category": "toy",
       "description": "plastic truck toy",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLe7jP52zOXDE6PvJ1Ri56AWU9xPm3ByFOMdoyfoDPkXsyWY0wuGef4jZUIJuE94s1qbI&usqp=CAU",
@@ -86,7 +86,7 @@
     {
       "name": "Toy Truck",
       "price": "2200",
-      "color": "Yellow Green",
+      "color": "Yellow",
       "category": "toy",
       "description": "plastic toy truck",
       "image": "https://m.media-amazon.com/images/I/815bptrSfGL._AC_UF350,350_QL80_.jpg",
@@ -104,7 +104,7 @@
     {
       "name": "Macbook PRO",
       "price": "250000",
-      "color": "Midnight Black",
+      "color": "Black",
       "category": "laptop",
       "description": "macbook pro 16GB 1TB SSD",
       "image": "data:image/jpeg;base64,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",
@@ -113,7 +113,7 @@
     {
       "name": "iPad Pro",
       "price": "90000",
-      "color": "Space Grey",
+      "color": "Grey",
       "category": "iPad",
       "description": "Apple 12.9\" iPad Pro Wi-Fi 256GB - Space Grey",
       "image": "https://www.imagineonline.store/cdn/shop/files/r1605_Wi-Fi_12-9-in_6th-Gen_Space_Gray_PDP_Image_Avail_Position-1__en-IN_487904c2-7829-4b28-b059-b64ea66d4c1e.jpg?v=1705481090&width=823",
@@ -131,7 +131,7 @@
     {
       "name": "iMac Pro",
       "price": "320000",
-      "color": "Midnight Black",
+      "color": "Black",
       "category": "iMac",
       "description": "iMac Pro 32gb 1tb ssd",
       "image": "https://www.apple.com/newsroom/images/product/imac-pro/new_2017_imac_pro_dark_grey_front_big.jpg.large.jpg",
