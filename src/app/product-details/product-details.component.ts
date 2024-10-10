@@ -13,6 +13,7 @@ import { CommonModule } from '@angular/common';
 })
 export class ProductDetailsComponent {
   productData: undefined | Product;
+  productQuantity: number = 1;
   constructor(
     private activateRoute: ActivatedRoute,
     private product: ProductService
@@ -25,5 +26,12 @@ export class ProductDetailsComponent {
         this.productData = result;
         console.log(result);
       });
+  }
+  handleQuantity(val: string) {
+    if (this.productQuantity < 20 && val === 'plus') {
+      this.productQuantity += 1;
+    } else if (this.productQuantity > 1 && val === 'min') {
+      this.productQuantity -= 1;
+    }
   }
 }

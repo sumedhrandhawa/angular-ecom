@@ -49,6 +49,9 @@ export class HeaderComponent {
   hideSearch() {
     this.searchResult = undefined;
   }
+  redirectToDetails(id: string) {
+    this.route.navigate(['/details/' + id]);
+  }
   submitSearch(val: string) {
     this.route.navigate([`search/${val}`]);
   }
