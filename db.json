@@ -137,5 +137,19 @@
       "image": "https://www.apple.com/newsroom/images/product/imac-pro/new_2017_imac_pro_dark_grey_front_big.jpg.large.jpg",
       "id": "kbaFJ7x"
     }
+  ],
+  "users": [
+    {
+      "name": "Sumedh",
+      "email": "sumedh@user.com",
+      "password": "zxy@123",
+      "id": 1
+    },
+    {
+      "name": "Sanjam",
+      "email": "sanjam@user.com",
+      "password": "xyz@123",
+      "id": 2
+    }
   ]
 }
