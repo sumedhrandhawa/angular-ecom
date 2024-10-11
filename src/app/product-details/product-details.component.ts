@@ -14,6 +14,7 @@ import { CommonModule } from '@angular/common';
 export class ProductDetailsComponent {
   productData: undefined | Product;
   productQuantity: number = 1;
+  removeCart: boolean = false;
   constructor(
     private activateRoute: ActivatedRoute,
     private product: ProductService
@@ -24,7 +25,19 @@ export class ProductDetailsComponent {
     productId &&
       this.product.getProduct(productId).subscribe((result) => {
         this.productData = result;
-        console.log(result);
+
+        let cartData = localStorage.getItem('localCart');
+        if (productId && cartData) {
+          let items = JSON.parse(cartData);
+          items = items.filter(
+            (item: Product) => productId == item.id.toString()
+          );
+          if (items.length) {
+            this.removeCart = true;
+          } else {
+            this.removeCart = false;
+          }
+        }
       });
   }
   handleQuantity(val: string) {
@@ -39,7 +52,12 @@ export class ProductDetailsComponent {
       this.productData.quantity = this.productQuantity;
       if (!localStorage.getItem('user')) {
         this.product.localAddToCart(this.productData);
+        this.removeCart = true;
       }
     }
+  }
+  removeFromCart(productId: string) {
+    this.product.removeItemFromCart(productId);
+    this.removeCart = false;
   }
 }
