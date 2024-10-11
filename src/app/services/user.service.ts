@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { SignUp } from '../data-type';
+import { Login, SignUp } from '../data-type';
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
 
@@ -19,6 +19,17 @@ export class UserService {
         }
       });
   }
+  // userLogin(user: Login) {
+  //   this.http
+  //     .post('http://localhost:3000/users', user, { observe: 'response' })
+  //     .subscribe((result) => {
+  //       console.log(result.body);
+  //       if (result) {
+  //         localStorage.setItem('user', JSON.stringify(result.body));
+  //         this.router.navigate(['/']);
+  //       }
+  //     });
+  // }
   userAuthReload() {
     if (localStorage.getItem('user')) {
       this.router.navigate(['/']);
