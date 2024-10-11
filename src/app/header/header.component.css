@@ -40,7 +40,7 @@
     color: blueviolet;
     border: 1px solid blueviolet;
     height: 39px;
-    border-right: 0px;
+    /* border-right: 0px; */
 }
 
 .nav .nav-search button {
