@@ -163,5 +163,31 @@
       "password": "xyz@123",
       "id": 4
     }
+  ],
+  "cart": [
+    {
+      "name": "iPhone 14",
+      "price": "100000",
+      "category": "mobiles",
+      "color": "purple",
+      "description": "iPhone",
+      "image": "https://inventstore.in/wp-content/uploads/2023/04/Purple-scaled.webp",
+      "quantity": 1,
+      "userId": 2,
+      "productId": "1e11",
+      "id": 1
+    },
+    {
+      "name": "iPhone 16 Pro Max",
+      "price": "140000",
+      "color": "Golden",
+      "category": "mobile",
+      "description": "latest iPhone in the market.",
+      "image": "https://gadgets.beebom.com/wp-content/uploads/2024/02/Apple-iPhone-16-Pro.png",
+      "quantity": 5,
+      "userId": 2,
+      "productId": "acc9",
+      "id": 2
+    }
   ]
 }
