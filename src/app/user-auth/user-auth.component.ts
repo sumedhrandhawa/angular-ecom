@@ -13,6 +13,7 @@ import { CommonModule } from '@angular/common';
 })
 export class UserAuthComponent {
   showLogin: boolean = true;
+  authError: string = '';
   constructor(private user: UserService) {}
   ngOnInit() {
     this.user.userAuthReload();
@@ -22,6 +23,14 @@ export class UserAuthComponent {
   }
   login(data: Login) {
     this.user.userLogin(data);
+    this.user.invalidUserAuth.subscribe((result) => {
+      console.log(result);
+      if (result) {
+        this.authError = 'Please enter valid user details';
+      } else {
+        this.authError = '';
+      }
+    });
   }
   openLogin() {
     this.showLogin = true;
