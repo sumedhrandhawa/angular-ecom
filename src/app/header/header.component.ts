@@ -14,6 +14,7 @@ import { Product } from '../data-type';
 export class HeaderComponent {
   menuType: string = 'default';
   sellerName: string = '';
+  userName: string = '';
   searchResult: undefined | Product[];
   constructor(private route: Router, private product: ProductService) {}
 
@@ -25,6 +26,11 @@ export class HeaderComponent {
           let sellerStore = localStorage.getItem('seller');
           let sellerData = sellerStore && JSON.parse(sellerStore);
           this.sellerName = sellerData.name;
+        } else if (localStorage.getItem('user')) {
+          let userStore = localStorage.getItem('user');
+          let userData = userStore && JSON.parse(userStore);
+          this.userName = userData.name;
+          this.menuType = 'user';
         } else {
           this.menuType = 'default';
         }
@@ -34,6 +40,10 @@ export class HeaderComponent {
   logout() {
     localStorage.removeItem('seller');
     this.route.navigate(['/']);
+  }
+  userLogout() {
+    localStorage.removeItem('user');
+    this.route.navigate(['/user-auth']);
   }
   searchProduct(query: KeyboardEvent) {
     if (query) {

@@ -150,6 +150,18 @@
       "email": "sanjam@user.com",
       "password": "xyz@123",
       "id": 2
+    },
+    {
+      "name": "Armaan",
+      "email": "armaan@user.com",
+      "password": "xyz@123",
+      "id": 3
+    },
+    {
+      "name": "Baban",
+      "email": "baban@user.com",
+      "password": "xyz@123",
+      "id": 4
     }
   ]
 }
