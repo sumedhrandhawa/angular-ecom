@@ -142,7 +142,7 @@
     {
       "name": "Sumedh",
       "email": "sumedh@user.com",
-      "password": "zxy@123",
+      "password": "xyz@123",
       "id": 1
     },
     {
@@ -166,6 +166,54 @@
   ],
   "cart": [
     {
+      "name": "Toy Truck",
+      "price": "2200",
+      "color": "Yellow",
+      "category": "toy",
+      "description": "plastic toy truck",
+      "image": "https://m.media-amazon.com/images/I/815bptrSfGL._AC_UF350,350_QL80_.jpg",
+      "quantity": 5,
+      "userId": 2,
+      "productId": "Rk_9YVN",
+      "id": 1
+    },
+    {
+      "name": "Macbook PRO",
+      "price": "250000",
+      "color": "Black",
+      "category": "laptop",
+      "description": "macbook pro 16GB 1TB SSD",
+      "image": "data:image/jpeg;base64,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",
+      "quantity": 4,
+      "productId": "VJiJQRZ",
+      "userId": 2,
+      "id": 2
+    },
+    {
+      "name": "iPhone 16 Pro Max",
+      "price": "140000",
+      "color": "Golden",
+      "category": "mobile",
+      "description": "latest iPhone in the market.",
+      "image": "https://gadgets.beebom.com/wp-content/uploads/2024/02/Apple-iPhone-16-Pro.png",
+      "quantity": 1,
+      "productId": "acc9",
+      "userId": 2,
+      "id": 3
+    },
+    {
+      "name": "Macbook PRO",
+      "price": "250000",
+      "color": "Grey",
+      "category": "laptop",
+      "description": "macbook pro 16GB 1TB SSD",
+      "image": "data:image/jpeg;base64,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",
+      "quantity": 6,
+      "productId": "uqSt1-j",
+      "userId": 1,
+      "id": 4
+    },
+    {
       "name": "iPhone 14",
       "price": "100000",
       "category": "mobiles",
@@ -173,9 +221,9 @@
       "description": "iPhone",
       "image": "https://inventstore.in/wp-content/uploads/2023/04/Purple-scaled.webp",
       "quantity": 1,
-      "userId": 2,
       "productId": "1e11",
-      "id": 1
+      "userId": 1,
+      "id": 5
     },
     {
       "name": "iPhone 16 Pro Max",
@@ -185,9 +233,45 @@
       "description": "latest iPhone in the market.",
       "image": "https://gadgets.beebom.com/wp-content/uploads/2024/02/Apple-iPhone-16-Pro.png",
       "quantity": 5,
-      "userId": 2,
       "productId": "acc9",
-      "id": 2
+      "userId": 1,
+      "id": 6
+    },
+    {
+      "name": "Toy Truck",
+      "price": "2200",
+      "color": "Yellow",
+      "category": "toy",
+      "description": "plastic toy truck",
+      "image": "https://m.media-amazon.com/images/I/815bptrSfGL._AC_UF350,350_QL80_.jpg",
+      "quantity": 4,
+      "productId": "Rk_9YVN",
+      "userId": 4,
+      "id": 7
+    },
+    {
+      "name": "Toy Truck",
+      "price": "2000",
+      "color": "Blue",
+      "category": "toy",
+      "description": "plastic truck toy",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLe7jP52zOXDE6PvJ1Ri56AWU9xPm3ByFOMdoyfoDPkXsyWY0wuGef4jZUIJuE94s1qbI&usqp=CAU",
+      "quantity": 2,
+      "productId": "Uq_msP0",
+      "userId": 4,
+      "id": 8
+    },
+    {
+      "name": "Samsung M40",
+      "price": "18000",
+      "color": "blue",
+      "category": "mobile",
+      "description": "a samsung product",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1eiaj3N4ky-1nggBrTzaRLUgq0EJG9KHTJw&s",
+      "quantity": 1,
+      "productId": "9abc",
+      "userId": 4,
+      "id": 9
     }
   ]
 }

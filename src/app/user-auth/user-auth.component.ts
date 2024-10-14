@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { Login, SignUp } from '../data-type';
+import { Cart, Login, Product, SignUp } from '../data-type';
 import { UserService } from '../services/user.service';
 import { CommonModule } from '@angular/common';
+import { ProductService } from '../services/product.service';
 
 @Component({
   selector: 'app-user-auth',
@@ -14,7 +15,7 @@ import { CommonModule } from '@angular/common';
 export class UserAuthComponent {
   showLogin: boolean = true;
   authError: string = '';
-  constructor(private user: UserService) {}
+  constructor(private user: UserService, private product: ProductService) {}
   ngOnInit() {
     this.user.userAuthReload();
   }
@@ -26,16 +27,46 @@ export class UserAuthComponent {
     this.user.invalidUserAuth.subscribe((result) => {
       console.log(result);
       if (result) {
-        this.authError = 'Please enter valid user details';
+        this.authError = 'User not found';
       } else {
         this.authError = '';
       }
     });
+    if (!this.authError) {
+      setTimeout(() => this.localCartToRemoteCart(), 300);
+    }
   }
   openLogin() {
     this.showLogin = true;
   }
   openSignUp() {
     this.showLogin = false;
+  }
+  localCartToRemoteCart() {
+    let data = localStorage.getItem('localCart');
+    if (data) {
+      let cartDataList: Product[] = JSON.parse(data);
+      let user = localStorage.getItem('user');
+      let userId = user && JSON.parse(user).id;
+
+      cartDataList.forEach((product: Product, index) => {
+        let cartData: Cart = {
+          ...product,
+          productId: product.id,
+          userId,
+        };
+        delete cartData.id;
+        setTimeout(() => {
+          this.product.addToCart(cartData).subscribe((result) => {
+            if (result) {
+              console.log('Item stored in DB');
+            }
+          });
+          if (cartDataList.length === index + 1) {
+            localStorage.removeItem('localCart');
+          }
+        }, 500);
+      });
+    }
   }
 }
