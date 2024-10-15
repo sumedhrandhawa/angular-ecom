@@ -42,12 +42,13 @@ export class ProductService {
     let localCart = localStorage.getItem('localCart');
     if (!localCart) {
       localStorage.setItem('localCart', JSON.stringify([data]));
+      this.cartData.emit([data]);
     } else {
       cartData = JSON.parse(localCart);
       cartData.push(data);
       localStorage.setItem('localCart', JSON.stringify(cartData));
+      this.cartData.emit(cartData);
     }
-    this.cartData.emit(cartData);
   }
   removeItemFromCart(productId: string) {
     let cartData = localStorage.getItem('localCart');
@@ -60,5 +61,17 @@ export class ProductService {
   }
   addToCart(cartData: Cart) {
     return this.http.post('http://localhost:3000/cart', cartData);
+  }
+  getCartList(userId: number) {
+    return this.http
+      .get<Product[]>(`http://localhost:3000/cart?userId=${userId}`, {
+        observe: 'response',
+      })
+      .subscribe((result) => {
+        console.log(result);
+        if (result && result.body) {
+          this.cartData.emit(result.body);
+        }
+      });
   }
 }
