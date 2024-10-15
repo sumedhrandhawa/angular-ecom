@@ -15,6 +15,7 @@ export class ProductDetailsComponent {
   productData: undefined | Product;
   productQuantity: number = 1;
   removeCart: boolean = false;
+  cartData: undefined | Product;
   constructor(
     private activateRoute: ActivatedRoute,
     private product: ProductService
@@ -48,6 +49,7 @@ export class ProductDetailsComponent {
                 productId?.toString() === item.productId?.toString()
             );
             if (item.length) {
+              this.cartData = item[0];
               this.removeCart = true;
             }
           });
@@ -86,7 +88,18 @@ export class ProductDetailsComponent {
     }
   }
   removeFromCart(productId: string) {
-    this.product.removeItemFromCart(productId);
+    if (!localStorage.getItem('user')) {
+      this.product.removeItemFromCart(productId);
+    } else {
+      let user = localStorage.getItem('user');
+      let userId = user && JSON.parse(user).id;
+      this.cartData &&
+        this.product.removeFromCart(this.cartData?.id).subscribe((result) => {
+          if (result) {
+            this.product.getCartList(userId);
+          }
+        });
+    }
     this.removeCart = false;
   }
 }

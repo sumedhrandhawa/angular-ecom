@@ -214,18 +214,6 @@
       "id": 4
     },
     {
-      "name": "iPhone 14",
-      "price": "100000",
-      "category": "mobiles",
-      "color": "purple",
-      "description": "iPhone",
-      "image": "https://inventstore.in/wp-content/uploads/2023/04/Purple-scaled.webp",
-      "quantity": 1,
-      "productId": "1e11",
-      "userId": 1,
-      "id": 5
-    },
-    {
       "name": "iPhone 16 Pro Max",
       "price": "140000",
       "color": "Golden",
@@ -272,6 +260,30 @@
       "productId": "9abc",
       "userId": 4,
       "id": 9
+    },
+    {
+      "name": "iPhone 14",
+      "price": "100000",
+      "category": "mobiles",
+      "color": "purple",
+      "description": "iPhone",
+      "image": "https://inventstore.in/wp-content/uploads/2023/04/Purple-scaled.webp",
+      "quantity": 1,
+      "userId": 1,
+      "productId": "1e11",
+      "id": 10
+    },
+    {
+      "name": "Toy Truck",
+      "price": "2000",
+      "color": "Blue",
+      "category": "toy",
+      "description": "plastic truck toy",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLe7jP52zOXDE6PvJ1Ri56AWU9xPm3ByFOMdoyfoDPkXsyWY0wuGef4jZUIJuE94s1qbI&usqp=CAU",
+      "quantity": 1,
+      "userId": 1,
+      "productId": "Uq_msP0",
+      "id": 11
     }
   ]
 }
