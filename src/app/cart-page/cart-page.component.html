@@ -2,22 +2,21 @@
     <h1>Cart Page</h1>
     <div class="row">
         <div class="col-sm-8 details">
-            <ul>
+            <ul *ngFor="let cart of cartData">
                 <li>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxbqGfQfoRXXg48XbpMegbgboBXgY61EX-aw&s"
-                        alt="">
+                    <img src="{{cart.image}}" alt="">
                 </li>
                 <li>
-                    <span>Product Name</span>
+                    <span>{{cart.name}}</span>
                 </li>
                 <li>
-                    <span>Price: 100</span>
+                    <span>Price: {{cart.price}}</span>
                 </li>
                 <li>
-                    <span>Quantity: 5</span>
+                    <span>Quantity: {{cart.quantity}}</span>
                 </li>
                 <li>
-                    <button class="form-button">Remote to cart</button>
+                    <button class="form-button">Remove</button>
                 </li>
             </ul>
         </div>
@@ -25,22 +24,22 @@
             <h3>Summary</h3>
             <ul>
                 <li>
-                    <span>Amount</span><span>300</span>
+                    <span>Amount</span><span>{{this.priceSummary.price}}</span>
                 </li>
                 <li>
-                    <span>Tax</span><span>30</span>
+                    <span>Tax</span><span>{{this.priceSummary.tax}}</span>
                 </li>
                 <li>
-                    <span>Delivery</span><span>30</span>
+                    <span>Delivery</span><span>{{this.priceSummary.delivery}}</span>
                 </li>
                 <li>
-                    <span>Discount</span><span>50</span>
+                    <span>Discount</span><span>{{this.priceSummary.discount}}</span>
                 </li>
                 <li>
                     <span>
                         <h4>Total</h4>
                     </span><span>
-                        <h4>300</h4>
+                        <h4>{{this.priceSummary.total}}</h4>
                     </span>
                 </li>
             </ul>
