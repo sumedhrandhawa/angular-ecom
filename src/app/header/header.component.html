@@ -41,7 +41,7 @@
                 <a (click)="userLogout()">Logout</a>
             </li>
             <li>
-                <a href="#">Cart({{cartItems}})</a>
+                <a routerLink="cart-page">Cart({{cartItems}})</a>
             </li>
         </ul>
         <ul *ngSwitchCase="'seller'">
